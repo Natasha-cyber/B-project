@@ -1,0 +1,153 @@
+body {
+  min-width: 1020px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+
+  color: #444;
+}
+
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1020px;
+}
+
+.main_navigation {
+  padding: 0 40px;
+}
+
+.logo_container {
+  float: left;
+  width: 220px;
+  margin: 26px 0 22px;
+}
+
+.logo_container img {
+  float: left;
+  margin-right: 14px;
+}
+
+.logo_container .logo_title{
+  font-size: 20px;
+  line-height: 28px;
+  color: #444;
+}
+
+.main_menu {
+  min-width: 460px;
+  float: right;
+  margin: 30px 0 28px;
+  font-size: 0;
+  text-align: right;
+}
+
+.main_menu_item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2px;
+  text-transform: uppercase;
+}
+
+.main_menu_item:last-of-type {
+  margin-right: 14px;
+}
+
+.main_menu_link {
+  display: block;
+  padding: 12px 11px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #444;
+}
+
+.main_menu_link:hover {
+  background-color: #1bbc9b;
+  color: #fff;
+}
+
+.header_caption {
+  width: 576px;
+  height: 388px;
+  padding: 65px 222px 0 222px;
+  text-align: center;
+  background: #323232 url(../img/jumbotron.jpg) no-repeat;
+  color: #fff;
+}
+
+.header_caption_title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-size: 55px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #fff;
+}
+
+.header_caption_title span {
+  font-weight: 700;
+}
+
+.header_caption p {
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.btn {
+  padding: 9px 13px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background-color: #1bbc9b;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+.header_caption .btn {
+  margin-bottom: 42px;
+}
+
+.chevron_down {
+  font-size: 44px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chevron_down:hover {
+    color: #e1fff9;
+}
+
+.main_footer {
+  padding: 35px 0;
+  background-color: #2d3e50;
+}
+
+.main_footer_copyright {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #fff;
+  padding-left: 40px;
+}
