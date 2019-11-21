@@ -15,8 +15,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  width: 1020px;
+  width: 1050px;
 }
 
 .main_navigation {
@@ -70,11 +69,11 @@ body {
 .main_menu_link:hover {
   background-color: #1bbc9b;
   color: #fff;
+  text-decoration: none;
 }
 
 .header_caption {
-  width: 576px;
-  height: 388px;
+  height: 453px;
   padding: 65px 222px 0 222px;
   text-align: center;
   background: #323232 url(../img/jumbotron.jpg) no-repeat;
@@ -105,12 +104,14 @@ body {
   color: #fff;
 }
 
-.btn {
-  padding: 9px 13px;
+.button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 9px 12px;
   font-size: 13px;
   line-height: 18px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   background-color: #1bbc9b;
   color: #fff;
   text-transform: uppercase;
@@ -119,13 +120,19 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #fff;
-  color: #444;
+.button:hover {
+  background-color: #0e6c5a;
 }
 
-.header_caption .btn {
+.header_caption .button {
   margin-bottom: 42px;
+}
+
+.header_caption_chevron {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .chevron_down {
@@ -135,11 +142,234 @@ body {
 }
 
 .chevron_down:hover {
-    color: #e1fff9;
+  color: #0e6c5a;
+}
+
+.page_section {
+  padding-top: 45px;
+  color: #444;
+  text-align: center;
+}
+
+.page_section h2 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #444;
+}
+
+.page_section p {
+  margin: 0;
+  line-height: 20px;
+  font-weight: 500;
+  color: #444;
+}
+
+.portfolio p {
+  margin-bottom: 35px;
+  font-size: 16px;
+}
+
+.filters_container {
+  font-size: 0;
+}
+
+.filters_container .button {
+  margin-right: 15px;
+}
+
+.filters_container .button:last-child {
+  margin-right: 0;
+}
+
+.portfolio_filter_active {
+  background-color: #16a086;
+  text-transform: none;
+}
+
+.portfolio_row {
+  margin-top: 45px;
+  margin-bottom: 35px;
+  padding-left: 64px;
+  padding-right: 34px;
+}
+
+.portfolio_row:first-of-type {
+
+}
+
+.portfolio_row:last-of-type {
+  margin-top: 0;
+  margin-bottom: 62px;
+}
+
+.portfolio_link {
+  display: block;
+  background-image: url(../img/sprite.png);
+}
+
+.portfolio_link_camera {
+  background-position: -176px -180px;
+  width: 170px;
+  height: 180px;
+}
+
+.portfolio_link_music {
+  background-position: -357px 0px;
+  width: 177px;
+  height: 180px;
+}
+
+.portfolio_link_settings {
+  background-position: 0px 0px;
+  width: 179px;
+  height: 180px;
+}
+
+.portfolio_link_brouser {
+  background-position: -179px 0px;
+  width: 178px;
+  height: 180px;
+}
+
+.portfolio_link_phone {
+  background-position: -346px -180px;
+  width: 170px;
+  height: 180px;
+}
+
+.portfolio_link_plays {
+  background-position: 0px -180px;
+  width: 176px;
+  height: 180px;
+}
+
+.about_us {
+  padding-bottom: 75px;
+  color: #fff;
+  background-color: #16a086;
+}
+
+.about_us h2 {
+  color: #fff;
+}
+
+.about_us > p {
+  margin-bottom: 43px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.about_us_row {
+  padding: 0 105px;
+}
+
+.about_us_column {
+  padding: 0 30px;
+}
+
+.about_us_worker {
+  min-height: 418px;
+  color: #444;
+  background-color: #fff;
+}
+
+.about_us_worker h3 {
+  margin: 0;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #444;
+}
+
+.about_us_worker h4 {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: italic;
+  color: #444;
+}
+
+.about_us_worker p {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #444;
+  text-align: left;
+}
+
+.contact_us {
+  padding-bottom: 61px;
+  background-color: #ecf0f1;
+}
+
+.contact_us > p {
+  margin-bottom: 36px;
+  font-size: 14px;
+}
+
+.feedback_form_wrapper {
+  font-size: 0;
+  text-align: right;
+}
+
+.contact_us_feedback_form input[type="text"],
+.contact_us_feedback_form input[type="email"],
+.contact_us_feedback_form textarea {
+  width: 220px;
+  height: 47px;
+  margin-top: 11px;
+  padding: 13px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: italic;
+  border: 2px solid #dde1e3;
+  background-color: #fff;
+  resize: none;
+}
+
+.contact_us_feedback_form input[type="text"]:hover,
+.contact_us_feedback_form input[type="email"]:hover,
+.contact_us_feedback_form textarea:hover {
+  border: 2px solid #bbbebf;
+}
+
+.contact_us_feedback_form input[type="text"]:focus,
+.contact_us_feedback_form input[type="email"]:focus,
+.contact_us_feedback_form textarea:focus {
+  border: 2px solid #1bbc9b;
+  outline: none;
+}
+
+.contact_us_feedback_form input[type="text"] {
+  margin-right: 20px;
+}
+
+.contact_us_feedback_form textarea {
+  width: 460px;
+  height: 153px;
+  margin-top: 22px;
+  margin-bottom: 16px;
+}
+
+.contact_us .map_wrapper p {
+  margin-bottom: 3px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: left;
 }
 
 .main_footer {
-  padding: 35px 0;
+  padding: 36px 0 34px;
   background-color: #2d3e50;
 }
 
@@ -150,4 +380,13 @@ body {
   font-weight: 500;
   color: #fff;
   padding-left: 40px;
+}
+
+.button_up {
+  position: fixed;
+  font-size: 30px;
+  bottom: 20px;
+  right: 292px;
+  width: 44px;
+  height: 44px;
 }
