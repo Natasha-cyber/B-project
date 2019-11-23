@@ -1,5 +1,4 @@
 body {
-  min-width: 1020px;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -15,7 +14,8 @@ body {
 }
 
 .container {
-  width: 1050px;
+  width: 100%;
+  max-width: 1050px;
 }
 
 .main_navigation {
@@ -206,8 +206,44 @@ body {
 }
 
 .portfolio_link {
+  position: relative;
   display: block;
   background-image: url(../img/sprite.png);
+}
+
+.portfolio_link .hover_wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 176px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: rgba(22, 160, 134, .75);
+  z-index: 100;
+}
+
+.portfolio_link_camera .hover_wrapper {
+  width: 170px;
+}
+
+.portfolio_link:hover .hover_wrapper {
+  display: block;
+}
+
+.hover_wrapper .search_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  margin-left: -22px;
+  padding-top: 11px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: rgb(68, 68, 68, .61);
+  color: #fff;
 }
 
 .portfolio_link_camera {
@@ -224,7 +260,7 @@ body {
 
 .portfolio_link_settings {
   background-position: 0px 0px;
-  width: 179px;
+  width: 178px;
   height: 180px;
 }
 
@@ -236,7 +272,7 @@ body {
 
 .portfolio_link_phone {
   background-position: -346px -180px;
-  width: 170px;
+  width: 176px;
   height: 180px;
 }
 
@@ -271,6 +307,7 @@ body {
 }
 
 .about_us_worker {
+  position: relative;
   min-height: 418px;
   color: #444;
   background-color: #fff;
@@ -303,6 +340,36 @@ body {
   font-weight: 500;
   color: #444;
   text-align: left;
+}
+
+.about_us_worker:hover .about_us_worker_social {
+  display: block;
+}
+
+.about_us_worker_social {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 94px;
+  margin-left: -90px;
+  width: 180px;
+  height: 48px;
+  font-size: 0;
+  background-color: rgba(22, 160, 134, .8);
+  z-index: 100;
+}
+
+.about_us_worker_social .social_icon {
+  display: inline-block;
+  width: 45px;
+  height: 48px;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 27px;
+}
+
+.about_us_worker_social .social_icon:hover {
+  color: #444;
 }
 
 .contact_us {
@@ -386,7 +453,7 @@ body {
   position: fixed;
   font-size: 30px;
   bottom: 20px;
-  right: 292px;
+  right: 42px;
   width: 44px;
   height: 44px;
 }
