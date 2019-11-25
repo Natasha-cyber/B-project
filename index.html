@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Bla-Bla</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -55,14 +59,14 @@
       <section class="portfolio">
         <h2 class="portfolio__title">Portfolio</h2>
         <p class="portfolio__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <div class="portfolio__filters filters">
-          <button class="filters__button button button--active" type="button" name="all">All</button>
-          <button class="filters__button button" type="button" name="web_design">Web design</button>
-          <button class="filters__button button" type="button" name="graphic_design">Graphic design</button>
-          <button class="filters__button button" type="button" name="flat_design">Flat design</button>
+        <div class="portfolio__filters filters controls">
+          <button class="filters__button button button--active filter" data-filter="all" type="button" name="all">All</button>
+          <button class="filters__button button filter" data-filter=".web" type="button" name="web_design">Web design</button>
+          <button class="filters__button button filter" data-filter=".graphic" type="button" name="graphic_design">Graphic design</button>
+          <button class="filters__button button filter" data-filter=".flat" type="button" name="flat_design">Flat design</button>
         </div>
-        <div class="row portfolio__list">
-          <div class="col-xs-12 col-sm-3">
+        <div id="Container" class="portfolio__list container">
+          <div class="portfolio__item mix web">
             <a class="portfolio__link portfolio__link--camera" href="#">
               <div class="portfolio__link--hover hover-wrapper">
                 <div class="hover-wrapper__search">
@@ -71,7 +75,7 @@
               </div>
             </a>
           </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="portfolio__item  mix web">
             <a class="portfolio__link portfolio__link--music" href="#">
               <div class="portfolio__link--hover">
                 <div class="hover-wrapper__search">
@@ -80,7 +84,7 @@
               </div>
             </a>
           </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="portfolio__item  mix graphic">
             <a class="portfolio__link portfolio__link--settings" href="#">
               <div class="portfolio__link--hover">
                 <div class="hover-wrapper__search">
@@ -89,7 +93,7 @@
               </div>
             </a>
           </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="portfolio__item  mix flat">
             <a class="portfolio__link portfolio__link--browser" href="#">
               <div class="portfolio__link--hover">
                 <div class="hover-wrapper__search">
@@ -98,9 +102,7 @@
               </div>
             </a>
           </div>
-        </div>
-        <div class="row portfolio__list">
-          <div class="col-xs-12 col-sm-3">
+          <div class="portfolio__item  mix web">
             <a class="portfolio__link portfolio__link--phone" href="#">
               <div class="portfolio__link--hover">
                 <div class="hover-wrapper__search">
@@ -109,7 +111,7 @@
               </div>
             </a>
           </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="portfolio__item  mix flat">
             <a class="portfolio__link portfolio__link--plays" href="#">
               <div class="portfolio__link--hover">
                 <div class="hover-wrapper__search">
@@ -118,7 +120,7 @@
               </div>
             </a>
           </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="portfolio__item  mix graphic">
             <a class="portfolio__link portfolio__link--camera" href="#">
               <div class="portfolio__link--hover">
                 <div class="hover-wrapper__search">
@@ -127,7 +129,7 @@
               </div>
             </a>
           </div>
-          <div class="col-xs-12 col-sm-3">
+          <div class="portfolio__item  mix graphic">
             <a class="portfolio__link portfolio__link--music" href="#">
               <div class="portfolio__link--hover">
                 <div class="hover-wrapper__search">
