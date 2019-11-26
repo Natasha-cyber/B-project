@@ -18,24 +18,5 @@ $(function(){
 			effects:'scale fade',
 			duration:200
 		}
-
-		/*layout: {
-			//display:'block'
-			containerClass:'list'
-		}*/
-
-		/*callbacks: {
-			onMixLoad:function(state) {
-				alert('Load');
-			},
-			onMixStart:function(state) {
-				alert(state.$targets.text());
-			},
-			onMixEnd:function() {
-				alert('End');
-			}
-		}*/
-
-
   });
 });
