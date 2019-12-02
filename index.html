@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bla-Bla</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.mixitup.js"></script>
@@ -17,15 +18,11 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation clearfix">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
               <div class="main-header__logo logo">
                 <img class="logo__image" width="49" height="47" src="img/logo.png" alt="Bla">
                 <span class="logo__title">BLA BLA</span><br>
                 <span class="logo__description">One Page Flat Template</span>
               </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
               <ul class="main-header__main-menu main-menu">
                 <li class="main-menu__item">
                   <a class="main-menu__link" href="#">Home</a>
@@ -40,8 +37,6 @@
                   <a class="main-menu__link" href="#">Contact</a>
                 </li>
               </ul>
-            </div>
-          </div>
         </nav>
         <div class="main-header__caption">
           <h1 class="main-header__title">We Build <span class="main-header__important">Brand</span></h1>
@@ -143,8 +138,8 @@
       <section class="about-us">
         <h2 class="about-us__title">About Us</h2>
         <p class="about-us__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <div class="row about-us__list">
-          <div class="col-xs-12 col-sm-4 about-us__item">
+        <div class="about-us__list clearfix">
+          <div class="about-us__item">
             <div class="about-us__worker worker">
               <img class="worker__avatar" src="img/melannie.jpg" alt="Melannie Doe">
               <h3 class="worker__name">Melannie Doe</h3>
@@ -166,7 +161,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 about-us__item">
+          <div class="about-us__item">
             <div class="about-us__worker worker">
               <img class="worker__avatar" src="img\jhonnie.jpg" alt="">
               <h3 class="worker__name">Jhonnie Doe</h3>
@@ -191,7 +186,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-4 about-us__item">
+          <div class="about-us__item">
             <div class="about-us__worker worker">
               <img class="worker__avatar" src="img\daniel.jpg" alt="">
               <h3 class="worker__name">Daniel Doe</h3>
@@ -217,23 +212,19 @@
           </div>
         </div>
       </section>
-      <section class="contact-us">
+      <section class="contact-us clearfix">
         <h2 class="contact-us__title">Contact Us</h2>
         <p class="contact-us__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        <div class="row">
-          <div class="col-sm-6">
-            <form class="contact-us__feedback-form feedback-form" action="index.html" method="post">
-              <input class="feedback-form__user-name" type="text" name="name" placeholder="Your name">
-              <input class="feedback-form__user-email" type="email" name="email" placeholder="Your email">
-              <textarea class="feedback-form__user-message" name="message" placeholder="Your message"></textarea>
-              <button class="feedback-form__submit button" type="submit" name="submit">Submit</button>
-            </form>
-          </div>
-          <div class="col-sm-6 contact-us__location location">
-            <p class="location__address"><i class="fas fa-map-marker-alt"></i> Bla Bla Company 125009 Moscow, Red Square 1</p>
-            <div class="location__map">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b2649764d711eba7fc5faf2960d277891c519ac5f084e0722816e3acad05dc0&amp;width=456&amp;height=265&amp;lang=ru_RU&amp;scroll=true"></script>
-            </div>
+        <form class="contact-us__feedback-form feedback-form" action="index.html" method="post">
+          <input class="feedback-form__user-name" type="text" name="name" placeholder="Your name">
+          <input class="feedback-form__user-email" type="email" name="email" placeholder="Your email">
+          <textarea class="feedback-form__user-message" name="message" placeholder="Your message"></textarea>
+          <button class="feedback-form__submit button" type="submit" name="submit">Submit</button>
+        </form>
+        <div class="contact-us__location location">
+          <p class="location__address"><i class="fas fa-map-marker-alt"></i> Bla Bla Company 125009 Moscow, Red Square 1</p>
+          <div class="location__map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9b2649764d711eba7fc5faf2960d277891c519ac5f084e0722816e3acad05dc0&amp;width=456&amp;height=265&amp;lang=ru_RU&amp;scroll=true"></script>
           </div>
         </div>
       </section>
